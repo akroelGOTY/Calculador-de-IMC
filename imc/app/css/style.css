@@ -6,54 +6,58 @@
 }
 
 body {
-  background-color: #121212;
+  background-image: url(/app/Captura\ de\ tela\ 2025-11-22\ 154440.png);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   min-height: 100vh;
   margin: 0;
+  color: aliceblue;
+  font-size: 20px;
+  text-align: center;
+}
+
+body::selection {
+  color: rgb(28, 0, 105);
+  background-color: #ffffff;
 }
 
 .container {
+  background-color: hsl(263, 97%, 15%);
+  border: 1px solid #ffffff;
+  border-radius: 2rcap;
+  padding: 30px 30px;
+  max-width: 500px;
+  max-height: 400px;
+  height: 50rem;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: aliceblue;
-  height: 27rem;
-  width: 33em;
-  border: 1px solid #303030;
-  background-color: transparent;
-  border-radius: 12px;
-  padding: 20px;
-}
-
-.container h2 {
-  font-weight: 100;
+  flex-direction: column;
 }
 
 .container-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  margin-top: 30px;
+  text-align: left;
 }
 
 .container-form button {
-  background-color: transparent;
-  color: aliceblue;
-  border: 1px solid #303030;
-  height: 3rem;
+  background-color: #2b0d96;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  height: 5rem;
+  color: #ffffff;
+  font-size: larger;
+  border: none;
+  border-radius: 20px;
 }
 
-.ctn-form-btn button {
-  background-color: #4f46e5;
-  color: aliceblue;
-  border: 1px solid #303030;
-  height: 3rem;
-  width: 10rem;
-}
-
-.container-form input {
-  background-color: transparent;
-  color: aliceblue;
-  border: 1px solid #303030;
+.form-input {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
 }
