@@ -6,32 +6,34 @@
 }
 
 body {
-  background-image: url(/app/Captura\ de\ tela\ 2025-11-22\ 154440.png);
+  background-image: url(/app/background.png);
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 100vh;
   min-height: 100vh;
   margin: 0;
-  color: aliceblue;
+  color: #05ffc9;
   font-size: 20px;
   text-align: center;
 }
 
 body::selection {
-  color: rgb(28, 0, 105);
-  background-color: #ffffff;
+  color: #013b45;
+  background-color: #1c6b99;
 }
 
 .container {
-  background-color: hsl(263, 97%, 15%);
-  border: 1px solid #ffffff;
+  background-color: rgba(175, 175, 175, 0.438); /* cor com alpha */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari */
   border-radius: 2rcap;
   padding: 30px 30px;
-  max-width: 500px;
+  max-width: 1000px;
   max-height: 400px;
   height: 50rem;
-  width: 100%;
+  width: 14cm;
   display: flex;
   flex-direction: column;
 }
@@ -44,20 +46,33 @@ body::selection {
 }
 
 .container-form button {
-  background-color: #2b0d96;
+  background-color: #014954;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  height: 5rem;
+  height: 4rem;
   color: #ffffff;
   font-size: larger;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .form-input {
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
+}
+
+.form-input input {
+  border: none;
+  background-color: #012c37;
+  height: 2.5rem;
+  color: #ffffff;
+  border-radius: 5dvb;
+}
+
+.form-input ::placeholder {
+  color: #ffffff;
+  padding-left: 10px;
 }
