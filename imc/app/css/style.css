@@ -20,8 +20,18 @@ body {
 }
 
 body::selection {
-  color: #013b45;
-  background-color: #1c6b99;
+    color: #ffffff;
+    background-color: #a9beeb;
+  }
+
+@media (max-width: 768px) {
+  body {
+    text-align: left;
+    color: #00d9ff;
+    background: linear-gradient(rgb(61, 61, 61), rgb(0, 0, 0)),
+    url("background.png")
+    center/cover no-repeat;
+  }
 }
 
 .container {
@@ -36,6 +46,15 @@ body::selection {
   width: 14cm;
   display: flex;
   flex-direction: column;
+}
+
+.container p {color: #bbf5f2;}
+
+@media (max-width: 768px) {
+    .container {
+      max-width: 350px;
+      max-height: 500px;
+  }
 }
 
 .container-form {
@@ -58,6 +77,18 @@ body::selection {
   border-radius: 10px;
 }
 
+
+.container-form button:hover {
+  cursor: pointer;
+}
+@media (max-width: 768px){
+  .container-form button {
+    background-color: transparent;
+    border: 1px solid rgb(6, 158, 150);
+    color: #00d9ff;
+  }
+}
+
 .form-input {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -69,10 +100,15 @@ body::selection {
   background-color: #012c37;
   height: 2.5rem;
   color: #ffffff;
-  border-radius: 5dvb;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.form-input input[type='number']:checked {
+  color: aquamarine;
 }
 
 .form-input ::placeholder {
-  color: #ffffff;
-  padding-left: 10px;
+  color: #ffffff79;
+  
 }
