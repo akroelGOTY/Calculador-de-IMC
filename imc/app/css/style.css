@@ -41,14 +41,19 @@ body::selection {
   border-radius: 2rcap;
   padding: 30px 30px;
   max-width: 1000px;
-  max-height: 400px;
+  max-height: 450px;
   height: 50rem;
   width: 14cm;
   display: flex;
   flex-direction: column;
 }
 
-.container p {color: #bbf5f2;}
+.container p {color: #d1fffd;}
+
+#result {
+  color: #000000;
+  margin-top: 10px;
+}
 
 @media (max-width: 768px) {
     .container {
@@ -97,7 +102,7 @@ body::selection {
 
 .form-input input {
   border: none;
-  background-color: #012c37;
+  background-color: #023846;
   height: 2.5rem;
   color: #ffffff;
   border-radius: 10px;
