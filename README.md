@@ -9,9 +9,7 @@
 Este projeto calcula o IMC utilizando a fórmula:
 
 ```
-
 IMC = peso / (altura × altura)
-
 ```
 
 ---
